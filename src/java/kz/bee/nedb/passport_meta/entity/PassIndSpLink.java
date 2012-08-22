@@ -19,7 +19,7 @@ public class PassIndSpLink {
     private Long parId;
     private Long passIndLinkId;
     private Long spId;
-    private Boolean orient;
+    private Long orient;
     
     public PassIndSpLink() {
         
@@ -64,11 +64,11 @@ public class PassIndSpLink {
     }
 
     @Column(name="orient")
-    public Boolean getOrient() {
+    public Long getOrient() {
         return orient;
     }
 
-    public void setOrient(Boolean orient) {
+    public void setOrient(Long orient) {
         this.orient = orient;
     }
     

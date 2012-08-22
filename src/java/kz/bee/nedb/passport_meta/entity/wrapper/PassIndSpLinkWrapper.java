@@ -114,7 +114,8 @@ public class PassIndSpLinkWrapper extends PassIndSpLink {
                 .append(passIndLinkWrapper.getMeasure()!=null ? "&nbsp;&nbsp;|&nbsp;&nbsp;" + passIndLinkWrapper.getMeasure().getRname() : "")
                 .append("&nbsp;&nbsp;|&nbsp;&nbsp;")
                 .append(getSpClass().getRname())
-                .append(getOrient()!=null ? ("&nbsp;&nbsp;|&nbsp;&nbsp;" + (!getOrient() ? horizontal : vertical)) : "")
+//                .append(getOrient()!=null ? ("&nbsp;&nbsp;|&nbsp;&nbsp;" + (!getOrient() ? horizontal : vertical)) : "")
+                .append(getOrient()!=null ? ("&nbsp;&nbsp;|&nbsp;&nbsp;" + (!Long.valueOf(1L).equals(getOrient()) ? horizontal : vertical)) : "")
                 .append("</option>");
 
         if ((children != null) && !children.isEmpty()) {
@@ -163,7 +164,8 @@ public class PassIndSpLinkWrapper extends PassIndSpLink {
                 .append("</td><td><a href=\"?id=")
                 .append(getId() == null ? "" : getId().toString())
                 .append("\">")
-                .append(getOrient()!=null ? (!getOrient() ? horizontal : vertical) : "")
+//                .append(getOrient()!=null ? (!getOrient() ? horizontal : vertical) : "")
+                .append(getOrient()!=null ? (!(Long.valueOf(1L).equals(getOrient())) ? horizontal : vertical) : "")
                 .append("</a></td><td><a href=\"delete-pass-ind-sp-link?id=")
                 .append(getId() == null ? "" : getId().toString())
                 .append("\">")

@@ -357,7 +357,7 @@ public class MetaController {
         passIndSpLink.setParId(parId);
         passIndSpLink.setPassIndLinkId(passIndLinkId);
         passIndSpLink.setSpId(spId);
-        passIndSpLink.setOrient(orient);
+        passIndSpLink.setOrient(orient == null ? null : (orient ? 1L : 0L));
 
         passIndSpLinkService.save(passIndSpLink);
 

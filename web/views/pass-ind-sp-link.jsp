@@ -138,12 +138,14 @@
                                                 </c:if>
                                                 >...</option>
                                         <option value="false"
-                                                <c:if test="${(not empty passIndSpLink.orient) && (not passIndSpLink.orient)}">
+                                                <%--<c:if test="${(not empty passIndSpLink.orient) && (not passIndSpLink.orient)}">--%>
+                                                <c:if test="${(not empty passIndSpLink.orient) && (passIndSpLink.orient == 0)}">
                                                     selected
                                                 </c:if>
                                                 ><spring:message code="item.horizontal"/></option>
                                         <option value="true"
-                                                <c:if test="${(not empty passIndSpLink.orient) && (passIndSpLink.orient)}">
+                                                <%--<c:if test="${(not empty passIndSpLink.orient) && (passIndSpLink.orient)}">--%>
+                                                <c:if test="${(not empty passIndSpLink.orient) && (passIndSpLink.orient == 1)}">
                                                     selected
                                                 </c:if>
                                                 ><spring:message code="item.vertical"/></option>
