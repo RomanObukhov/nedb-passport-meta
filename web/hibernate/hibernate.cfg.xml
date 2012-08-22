@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="kz.bee.nedb.passport_meta.entity.SPClass"/>
+        <mapping class="kz.bee.nedb.passport_meta.entity.Passport"/>
+        <mapping class="kz.bee.nedb.passport_meta.entity.Indicator"/>
+        <mapping class="kz.bee.nedb.passport_meta.entity.Measure"/>
+        <mapping class="kz.bee.nedb.passport_meta.entity.PassIndLink"/>
+        <mapping class="kz.bee.nedb.passport_meta.entity.ClassItemTree"/>
+        <mapping class="kz.bee.nedb.passport_meta.entity.PassIndSpLink"/>
+        <mapping class="kz.bee.nedb.passport_meta.entity.OrgTypeCitLink"/>
+        <mapping class="kz.bee.nedb.passport_meta.entity.OrgTypeIndLink"/>
+    </session-factory>
+</hibernate-configuration>
